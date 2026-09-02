@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .home {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200') center/cover;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+        }
+
+        .logo {
+            font-size: 55px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 20px;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, .4);
+            height: 100%;
+        }
+
+        .hero {
+            padding-top: 180px;
+        }
+
+        .hero p {
+            font-size: 35px;
+        }
+
+        .hero h1 {
+            font-size: 90px;
+            margin: 20px 0;
+        }
+
+        .hero h3 {
+            width: 60%;
+            margin: auto;
+            line-height: 1.6;
+            font-size: 28px;
+            font-weight: normal;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            margin-top: 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .learn {
+            background: #8e7754;
+            color: white;
+        }
+
+        .contact {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .section {
+            padding: 80px 10%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .row img {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .text {
+            width: 50%;
+        }
+
+        .text h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .text p {
+            line-height: 1.8;
+            color: #666;
+            font-size: 20px;
+        }
+
+        .location {
+            background: #f8f8f8;
+        }
+
+        .baking {
+            text-align: center;
+        }
+
+        .baking h2 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 30%;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 20px 0;
+            font-size: 35px;
+        }
+
+        .card p {
+            color: #777;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #403d38;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        @media(max-width:768px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 60px;
+            }
+
+            .hero h3 {
+                width: 90%;
+                font-size: 20px;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .row img,
+            .text {
+                width: 100%;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="home">
+
+        <div class="overlay">
+
+            <div class="navbar">
+                <div class="logo">Bakery</div>
+
+
+
+                <div class="hero">
+                    <p>Welcome to</p>
+
+                    <h1>Family Bakery</h1>
+
+                    <h3>
+                        We're the biggest, best equipped and most advanced Bakery
+                        in the greater Los Angeles area.
+                    </h3>
+
+                    <button class="btn learn">Learn More</button>
+                    <button class="btn contact">Contact Us</button>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="section">
+
+        <div class="row">
+
+            <img src="https://ms.hsoubcdn.com/uploads/thumbnails/4305325/68b6c49cb04c1/b.png">
+
+            <div class="text">
+
+                <h2>Who we are?</h2>
+
+                <p>
+                    We have been operating for over 30 years and are Members of The Federation of Master Builders. We
+                    work on projects big and small from small residential extensions to full house. We are so happy with
+                    this theme. Everyday it make our lives better.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section location">
+
+        <div class="row">
+
+            <div class="text">
+
+                <h2>Our Location</h2>
+
+                <p>
+                    We have been operating for over 30 years and are Members of The Federation of Master Builders. We
+                    work on projects big and small from small residential extensions to full house. We are so happy with
+                    this theme. Everyday it make our lives better.
+                </p>
+
+                <br>
+
+                <p>
+                    Story on projects big and small from small residential extensions to full house. We are so happy
+                    with this theme. Everyday it make our lives better.
+                </p>
+
+            </div>
+
+            <img src="https://moazahmed3.github.io/Bakery/images/full-2.jpg">
+
+        </div>
+
+    </section>
+
+    <section class="section baking">
+
+        <h2>Our Baking</h2>
+
+        <p>
+            Learn more about them. We have worked truly hard
+            to make them perfect for every use.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://moazahmed3.github.io/Bakery/images/ben-garratt.jpg">
+                <h3>Bagels</h3>
+                <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a
+                    velit. Phasellus commodo turpis et lacinia posuere.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://moazahmed3.github.io/Bakery/images/clem-onojeghuo.jpg">
+                <h3>Cookies</h3>
+                <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a
+                    velit. Phasellus commodo turpis et lacinia posuere.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://moazahmed3.github.io/Bakery/images/ben-garratt.jpg">
+                <h3>Superior Breads</h3>
+                <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a
+                    velit. Phasellus commodo turpis et lacinia posuere.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <h2>Bakery</h2>
+        <br>
+        <p>Copyright 2026. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
